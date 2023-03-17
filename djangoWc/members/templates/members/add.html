@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Members</title>
+</head>
+<body>
+    <h1>Add new members here!</h1>
+    <div>
+        <form action="" method="post">
+            {% csrf_token %}
+
+            <label for="fname">Firstname</label>
+            <input type="text" name="fname">
+            <label for="lname">Lastname</label>
+            <input type="text" name="lname">
+            <br><br>
+            <label for="pnum">Phone number</label>
+            <input type="text" name="pnum">
+            <label for="DOJ">Joined Date</label>
+            <input type="date" name="DOJ">
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <button onclick="history.back()">Back</button>
+    </div>
+</body>
+</html>

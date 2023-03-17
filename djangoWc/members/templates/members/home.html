@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Members homepage</title>
+</head>
+<body>
+    <h1>This is the members homepage</h1>
+    <h3>List of members</h3>
+    <ol>
+        {% for member in mymembers %}
+            <li><a href="details/{{ member.id }}"> {{ member.firstname }} {{ member.lastname }} </a></li>
+
+        {% endfor %}
+    </ol>
+    <br>
+    <button onclick="window.location.href='addpage/';">Add new member</button>
+</body>
+</html>
